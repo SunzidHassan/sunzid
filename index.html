@@ -34,13 +34,13 @@
                       Sunzid Hassan
                     </p>
                     <p>
-                      I'm a Computer Science (CAM) Ph.D. candidate at <a href="https://www.latech.edu/" target="_blank">Louisiana Tech University</a>, Ruston, Louisiana.  I am advised by <a href="https://lingxiaow.github.io/index/" target="_blank">Dr. Lingxiao Wang</a>
+                      I'm a Ph.D. candidate in Computational Analysis and Modeling (CAM) at <a href="https://www.latech.edu/" target="_blank">Louisiana Tech University</a>, Ruston, Louisiana (expected Spring 2027). I am advised by <a href="https://lingxiaow.github.io/index/" target="_blank">Dr. Lingxiao Wang</a>.
                     </p>
                     <p>
-                      I completed my MS in Computer Science from Louisiana Tech University, at Aug. 2024..
-                    </p>  
+                      At Louisiana Tech I also completed an MS in Computer Science (Aug. 2024), followed by MS degrees in Electrical Engineering and Biomedical Engineering (Nov. 2026). Since Fall 2024, I have been teaching Computer Science and Electrical Engineering courses as an Instructor of Record.
+                    </p>
                     <p>
-                      My current research involves application of <b>AI in Robotics</b>.
+                      My research is on <b>multi-modal AI for robotics</b>: algorithms that fuse a robot's <b>vision</b>, <b>olfaction</b>, and <b>audition</b> to localize odor and sound sources.
                     </p>
 
 
@@ -71,9 +71,9 @@
                       <!-- <button class="button" data-filter=".news">News</button> -->
                       <button class="button" data-filter=".project">Project</button>
                       <button class="button is-checked" data-filter=".publication">Publication</button>
-                      <!-- <button class="button" data-filter=".works">Work</button> -->
-                      <!-- <button class="button" data-filter=".education">Education</button> -->
-                      <!-- <button class="button" data-filter=".more">More</button> -->
+                      <button class="button" data-filter=".teaching">Teaching</button>
+                      <button class="button" data-filter=".experience">Experience</button>
+                      <button class="button" data-filter=".service">Service</button>
                     </div>
 
                     <div class="grid">
@@ -86,7 +86,7 @@
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                           <tbody>
                           <p>
-                            I am deeply interested in research topics related to intelligence. My current research focuses on the application of AI in robotics, specifically the integration of high-level reasoning ability of Large Language Models with low-level control learning ability of Reinforcement Learning methods. I am also collaborating on a <b>Neuroscience</b> project. <!--Representative papers are <span class="highlight">highlighted</span>.-->
+                            I am deeply interested in research topics related to intelligence. My current research focuses on the application of AI in robotics, specifically multi-modal source localization: combining a robot's vision, olfaction, and audition, with Large Language Models and probabilistic belief maps, to find odor and sound sources. I am also collaborating on a <b>Neuroscience</b> project. <!--Representative papers are <span class="highlight">highlighted</span>.-->
                           <br>
                           <br>
                             My current and past research projects include the following:
@@ -97,6 +97,85 @@
                         <!-- Research Projects -->
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                           <tbody>
+
+                            <!--VOA Multi-Modal Source Localization-->
+                            <tr onmouseout="voa26_stop()" onmouseover="voa26_start()">
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <div class="two" id='voa26_image'>
+                                    <img src='images/robotPlatform26.png' width="160"></div>
+                                  <img src='images/voa26.png' width=160>
+                                </div>
+                                <script type="text/javascript">
+                                  function voa26_start() {
+                                    document.getElementById('voa26_image').style.opacity = "1";
+                                  }
+
+                                  function voa26_stop() {
+                                    document.getElementById('voa26_image').style.opacity = "0";
+                                  }
+                                  voa26_stop()
+                                </script>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <span class="papertitle">Vision-Olfaction-Audition (VOA) Multi-Modal Source Localization</span>
+                                <br>
+                                <br>
+                                <em>Current, Research Assistant</em>
+                                <br>
+                                <em>Advisor: <a href="https://lingxiaow.github.io/index/" target="_blank">Dr. Lingxiao Wang</a>, Louisiana Tech University (LaTech)</em>
+                                <p></p>
+                                <p>
+                                  A multi-modal, multi-robot source localization framework that fuses <b>visual</b>, <b>olfactory</b>, and <b>auditory</b> sensing into probabilistic belief maps over a SLAM-derived occupancy grid, using log-space Bayesian evidence accumulation and entropy-based termination.
+                                </p>
+                                <p>
+                                  The framework runs on a custom robot platform that integrates a camera, a microphone array, and a gas sensor on an embedded computer, with a ROS2 software stack for real-time multi-modal sensing, mapping, and navigation. Algorithms are developed and validated in the AI2-THOR and Gazebo simulators, and in a real household environment. A paper based on this work is under review at IEEE ICRA 2027.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <!--Personal Assistant Robot-->
+                            <tr>
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <img src='images/robotPlatform26.png' width=160>
+                                </div>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <span class="papertitle">Personal Assistant Robot</span>
+                                <br>
+                                <br>
+                                <em>Current</em>
+                                <br>
+                                <em><a href="https://youtu.be/ggUFHPtVB1k" target="_blank">Demo Video</a></em>
+                                <p></p>
+                                <p>
+                                  A personal AI assistant running on my custom-built ROS 2 differential-drive robot, which carries an OAK-D S2 stereo camera, an RPLIDAR A1, an MQ-3 chemical sensor, a ReSpeaker XVF3800 microphone array, and an NVIDIA Jetson Orin Nano. It can recognize people and remember their interests, hold conversations, carry out requests such as setting reminders and taking photos, and navigate autonomously.
+                                </p>
+                                <p>
+                                  The project is a finalist at the Nexus Louisiana Technology Competition 2026.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <!--Quadcopter-->
+                            <tr>
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <img src='images/quadcopter26.jpg' width=160>
+                                </div>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <span class="papertitle">Custom-Built Quadcopter</span>
+                                <br>
+                                <br>
+                                <em>Current</em>
+                                <p></p>
+                                <p>
+                                  A quadcopter I built from scratch around a Pixhawk 6C flight controller, as a first step toward aerial multi-modal sensing. I plan to extend the VOA source localization algorithm to this platform.
+                                </p>
+                              </td>
+                            </tr>
 
                             <!--AI-based Robotic Odor Source Localization-->
                             <tr>
@@ -111,13 +190,17 @@
                                 <br>
                                 <em>2023 - Current, Research Assistant</em>
                                 <br>
-                                <em>Advisor: <a href="https://lingxiaow.github.io/index/" target="_blank">Dr. Lingxiao Wang</a>, <em>Louisiana Tech University (LaTech)</em>
+                                <em>Advisor: <a href="https://lingxiaow.github.io/index/" target="_blank">Dr. Lingxiao Wang</a>, Louisiana Tech University (LaTech)</em>
                                 <p></p>
                                 <p>
-                                This project leverages various <i>AI techniques</i> to design a navigation model to guide a robot in finding a hidden odor source location with onboard <b>vision</b> and <b>olfaction</b> sensors.
-                                <br>
-                                <br>
+                                This project leverages various <i>AI techniques</i> to design a navigation model to guide a robot in finding a hidden odor source location with onboard <b>vision</b> and <b>olfaction</b> sensors. It spans four sub-projects:
                                 </p>
+                                <ul style="padding-left:18px;margin-top:0">
+                                  <li><a href="https://sunzidhassan.github.io/25_semanticOSL/" target="_blank">Semantic Odor Source Localization</a>: a semantic navigation algorithm that integrates LLM reasoning with visual and olfactory sensing, validated in the AI2-THOR household simulator.</li>
+                                  <li><a href="https://sunzidhassan.github.io/24_LLMOSL/" target="_blank">Multi-Modal LLM for Robot Navigation</a>: an LLM-based high-level reasoning module selects navigation behaviors from multi-modal prompts, and a low-level action module turns them into velocity commands on a physical robot.</li>
+                                  <li><a href="https://sunzidhassan.github.io/23_fusion/" target="_blank">Vision and Olfaction Fusion Algorithm</a>: a hierarchical navigation framework fusing supervised learning-based vision with olfaction sensing, tested in environments with obstacles and turbulent airflow.</li>
+                                  <li><a href="https://sunzidhassan.github.io/23_robot_platform/" target="_blank">Multi-Modal Robotic Platform Development</a>: a ROS-based mobile platform with integrated vision, airflow, and chemical sensing.</li>
+                                </ul>
                               </td>
                             </tr>
 
@@ -233,6 +316,27 @@
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                           <tbody>
 
+                            <!--VOA (under review)-->
+                            <tr>
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <img src='images/voa26.png' width=160>
+                                </div>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <span class="papertitle">VOA: A Framework for Odor and Sound Source Localization via Visual, Olfactory, and Auditory Fusion</span>
+                                <br>
+                                <strong>Sunzid Hassan</strong>
+                                <br>
+                                <em>Under review, IEEE International Conference on Robotics and Automation (ICRA)</em>, 2027
+                                <br>
+                                <p></p>
+                                <p>
+                                  Proposed a framework that localizes both odor and sound sources by fusing vision, olfaction, and audition. Each sense produces a source probability distribution over the search area, and the three are combined by log-space Bayesian evidence accumulation to guide the robot. Validated in a simulated household and in a real household, running entirely onboard a battery-powered NVIDIA Jetson Orin Nano.
+                                </p>
+                              </td>
+                            </tr>
+
                             <!--Semantic OSL-->
                             <tr>
                               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -257,6 +361,24 @@
                                 </p>
                                 <a href="https://sunzidhassan.github.io/25_semanticOSL/" target="_blank">Project Page</a> | <a href="https://ieeexplore.ieee.org/document/11077500" target="_blank">IEEE AIRC</a>
                                 </td>
+                            </tr>
+
+                            <!--Knowledge-driven LLM OSL-->
+                            <tr>
+                              <td colspan="2" style="padding:20px;width:100%;vertical-align:middle">
+                                <a href="https://www.sciencedirect.com/science/article/pii/S0921889025000016" target="_blank">
+                                  <span class="papertitle">A Knowledge-Driven Framework for Robotic Odor Source Localization using Large Language Models</span>
+                                </a>
+                                <br>
+                                Khan Raqib Mahmud,
+                                Lingxiao Wang,
+                                <strong>Sunzid Hassan</strong>
+                                <br>
+                                <em>Robotics and Autonomous Systems</em>, 2025
+                                <br>
+                                <p></p>
+                                <a href="https://www.sciencedirect.com/science/article/pii/S0921889025000016" target="_blank">Paper</a> | <a href="https://doi.org/10.1016/j.robot.2025.104915" target="_blank">DOI</a>
+                              </td>
                             </tr>
                                                         
                             <!--LLM OSL-->
@@ -365,7 +487,7 @@
                               </td>
                               <td style="padding:20px;width:75%;vertical-align:middle">
                                 <a href="https://sunzidhassan.github.io/23_robot_platform/">
-                                  <span class="papertitle">Multi-Modal Robotic Platfrom Development for Odor Source Localization</span>
+                                  <span class="papertitle">Multi-Modal Robotic Platform Development for Odor Source Localization</span>
                                 </a>
                                 <br>
                                 <strong>Sunzid Hassan</strong>,
@@ -379,7 +501,25 @@
                                 </p>
                                 <a href="https://sunzidhassan.github.io/23_robot_platform/" target="_blank">Project Page</a> | <a href="data/IEEE_IRC23__Robot_Platform_Development_for_OSL.pdf" target="_blank">Paper</a> | <a href="data/hassan2023multi.txt" target="_blank">Citation</a>
                               </td>
-                            </tr>	
+                            </tr>
+
+                            <!-- MS Thesis -->
+                            <tr>
+                              <td colspan="2" style="padding:20px;width:100%;vertical-align:middle">
+                                <a href="https://digitalcommons.latech.edu/theses/127/" target="_blank">
+                                  <span class="papertitle">Robotic Odor Source Localization Using Vision and Olfaction Sensing</span>
+                                </a>
+                                <br>
+                                <strong>Sunzid Hassan</strong>
+                                <br>
+                                <em>MS Thesis, Louisiana Tech Digital Commons</em>, 2024
+                                <br>
+                                <p></p>
+                                <a href="https://digitalcommons.latech.edu/theses/127/" target="_blank">Thesis</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
 
                         <!-- Wildfire Detection  -->
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -434,13 +574,317 @@
                                 </p>
                                 <a href="data/UR_2024.pdf" target="_blank">PDF</a> | 
                                 <a href="https://khanrmahmud.github.io/smokedetection/" target="_blank">Project Page</a> |
-                                <a href="data/mahmud2024deep.txt" target="_blank">Citation</a>
+                                <a href="https://doi.org/10.1109/UR61395.2024.10597449" target="_blank">DOI</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <!-- Other Publications -->
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                          <tbody>
+                            <tr>
+                              <td style="padding:0px;width:100%;vertical-align:middle">
+                                <p class="papertitle">&#128194 <b>Other Publications</b></p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                          <tbody>
+
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <a href="https://www.mdpi.com/1996-1073/19/11/2684" target="_blank">
+                                  <span class="papertitle">Thin-Film Solar Cells for Solar Thermal Cooling, Heating, and Energy Storage Systems: Materials, Manufacturing, and Emerging Applications</span>
+                                </a>
+                                <br>
+                                <strong>Sunzid Hassan</strong>,
+                                Sabbir Alom Shuvo,
+                                Jarif Ul Alam,
+                                Nafiya Islam,
+                                Md Faiaz Al Islam,
+                                Yead Rahman,
+                                Iftesam Nabi,
+                                Fatima Yeasmin,
+                                Md Ashfaq Siddiquee,
+                                Ahsanul Alam Kabhi,
+                                Mehrab Hossain,
+                                M Shafiqur Rahman
+                                <br>
+                                <em>Energies</em>, 2026
+                                <br>
+                                <p></p>
+                                <a href="https://www.mdpi.com/1996-1073/19/11/2684" target="_blank">Paper</a> | <a href="https://doi.org/10.3390/en19112684" target="_blank">DOI</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <a href="https://doi.org/10.1109/SoutheastCon56624.2025.10971488" target="_blank">
+                                  <span class="papertitle">Deep Learning-Based Aerosol and Ocean Data Retrieval from Satellite Polarimeter Measurements</span>
+                                </a>
+                                <br>
+                                Lingxiao Wang,
+                                Snorre Stamnes,
+                                <strong>Sunzid Hassan</strong>,
+                                Alexander Isiani,
+                                Hoang My Le,
+                                Cheston Sturdivant,
+                                Khan Raqib Mahmud
+                                <br>
+                                <em>IEEE SoutheastCon</em>, 2025
+                                <br>
+                                <p></p>
+                                <a href="https://doi.org/10.1109/SoutheastCon56624.2025.10971488" target="_blank">Paper</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <a href="https://doi.org/10.1109/SoutheastCon56624.2025.10971553" target="_blank">
+                                  <span class="papertitle">Comparative Analysis of Deep Learning Approaches for Predicting Thermomechanical Behavior of Shape Memory Polymers</span>
+                                </a>
+                                <br>
+                                Khan Raqib Mahmud,
+                                Lingxiao Wang,
+                                Jinyuan Chen,
+                                Xiyuan Liu,
+                                <strong>Sunzid Hassan</strong>
+                                <br>
+                                <em>IEEE SoutheastCon</em>, 2025
+                                <br>
+                                <p></p>
+                                <a href="https://doi.org/10.1109/SoutheastCon56624.2025.10971553" target="_blank">Paper</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Evaluation of Busses and Cars as Transportation Mode to Workplace</span>
+                                <br>
+                                <strong>Sunzid Hassan</strong>,
+                                KM Nabiul Haque,
+                                Tasmina Fahmin
+                                <br>
+                                <em>3rd International Conference on Civil Engineering for Sustainable Development (ICCESD)</em>, 2016
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Parking Demand and Supply Analysis of Different Three Wheeler Vehicles in Khulna</span>
+                                <br>
+                                <strong>Sunzid Hassan</strong>,
+                                Mohaimin Azmain
+                                <br>
+                                <em>3rd International Conference on Civil Engineering for Sustainable Development (ICCESD)</em>, 2016
                               </td>
                             </tr>
                           </tbody>
                         </table>
                       </div>
-                      
+
+                      <!-- teaching -->
+                      <div class="list-item teaching" data-category="teaching">
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                          <tbody>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <p>
+                                  I have been an <b>Instructor of Record</b> at <a href="https://www.latech.edu/" target="_blank">Louisiana Tech University</a> since September 2024, teaching the following courses:
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">CSC 220: Data Structures</span>
+                                <br>
+                                <em>Fall 2026 &middot; Class size: 26</em>
+                                <p>Object-oriented programming using Java, data structures, sorting algorithms, and recursion.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">CSC 450: Computer Networks</span>
+                                <br>
+                                <em>Winter 2026 &middot; Class size: 33</em>
+                                <p>Network topologies, layered architectures (OSI/TCP/IP), LANs, and network performance measurement and analysis.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">CSC 430: Database Management Systems</span>
+                                <br>
+                                <em>Spring 2025 &middot; Class size: 22</em>
+                                <p>ER/EER data modeling, relational algebra, SQL implementation, functional dependencies, normalization, and indexing structures.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">ELEN 479: Automatic Control Systems Lab</span>
+                                <br>
+                                <em>Fall 2024, Fall 2025 &middot; Class size: ~32 students per term (2 sections)</em>
+                                <p>Practical experiments on MATLAB/Simulink modeling, Op-Amp circuits, PID controller design, root locus analysis, and DC motor drive circuits.</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <!-- experience -->
+                      <div class="list-item experience" data-category="experience">
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                          <tbody>
+                            <tr>
+                              <td style="padding:20px 20px 0px 20px;width:100%;vertical-align:middle">
+                                <p class="papertitle">&#127891 <b>Education</b></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Louisiana Tech University</span>, Ruston, USA
+                                <ul style="padding-left:18px">
+                                  <li>Ph.D. in Computational Analysis and Modeling, <em>expected Spring 2027</em></li>
+                                  <li>MS in Electrical Engineering, <em>November 2026</em></li>
+                                  <li>MS in Biomedical Engineering, <em>November 2026</em></li>
+                                  <li>MS in Computer Science, <em>March 2023 - August 2024</em>. GPA: 4.00/4.00. Thesis: <a href="https://digitalcommons.latech.edu/theses/127/" target="_blank">Robotic Odor Source Localization using Vision and Olfaction Sensing</a>.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Institute of Business Administration (IBA), University of Dhaka</span>, Dhaka, Bangladesh
+                                <ul style="padding-left:18px">
+                                  <li>Master of Business Administration (MBA), <em>July 2018 - January 2021</em>. GPA: 3.60/4.00.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Khulna University of Engineering &amp; Technology (KUET)</span>, Khulna, Bangladesh
+                                <ul style="padding-left:18px">
+                                  <li>Bachelor of Urban and Regional Planning (BURP), <em>February 2013 - May 2017</em>. GPA: 3.43/4.00. Thesis: Quantifying Air Pollution Removal by Urban Trees in Khulna City with Google Earth Engine.</li>
+                                </ul>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding:20px 20px 0px 20px;width:100%;vertical-align:middle">
+                                <p class="papertitle">&#128188 <b>Research and Professional Experience</b></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Research Assistant</span>, <a href="https://lingxiaow.github.io/index/" target="_blank">Robotics Lab</a>, Louisiana Tech University
+                                <br>
+                                <em>March 2023 - Present &middot; Ruston, USA</em>
+                                <p>Multi-modal robotic source localization with vision, olfaction, and audition. See the Project tab for details.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Instructor of Record</span>, <a href="https://www.latech.edu/" target="_blank">Louisiana Tech University</a>
+                                <br>
+                                <em>September 2024 - Present &middot; Ruston, USA</em>
+                                <p>Computer Science and Electrical Engineering courses. See the Teaching tab for details.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Head of the Business Planning Section</span>, <a href="https://www.bdhonda.com/" target="_blank">Bangladesh Honda Pvt. Ltd.</a>
+                                <br>
+                                <em>April 2022 - February 2023 &middot; Dhaka, Bangladesh</em>
+                                <ul style="padding-left:18px">
+                                  <li>Developed a company-wide value chain analytics program. The insights generated by the system were used internally for supply chain planning ('Niguri') and management decision making ('Seihan').</li>
+                                  <li>Developed a sales forecasting system (trends, seasonal variations, and cycles), used in 2023-24 financial year production planning.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Financial Analyst</span>, <a href="https://www.linkedin.com/company/obboy-labs" target="_blank">Obboy Labs</a>
+                                <br>
+                                <em>March 2022 &middot; Dhaka, Bangladesh</em>
+                                <ul style="padding-left:18px">
+                                  <li>Used inferential statistical analysis on equity market data to predict stock market performance.</li>
+                                </ul>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding:20px 20px 0px 20px;width:100%;vertical-align:middle">
+                                <p class="papertitle">&#128736 <b>Skills</b></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <ul style="padding-left:18px;margin:0">
+                                  <li><b>Robotics Systems:</b> Robot Operating System (ROS) 1 &amp; 2, Gazebo Simulation, AI2Thor simulator, Docker, Developer Container</li>
+                                  <li><b>Programming Languages:</b> Python, R, Matlab, Java, Octave, C#, C++, C</li>
+                                  <li><b>Web Technologies:</b> HTML, JavaScript, CSS</li>
+                                  <li><b>Database Systems:</b> SQL, SQLite</li>
+                                  <li><b>Data Science &amp; Machine Learning:</b> PyTorch, TorchRL, Hugging Face</li>
+                                  <li><b>Circuit Design:</b> LTspice, MATLAB Simulink</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <!-- service -->
+                      <div class="list-item service" data-category="service">
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                          <tbody>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">President</span>, <a href="http://latechmsa.com/" target="_blank">Muslim Students Association (MSA) at Louisiana Tech University</a>
+                                <br>
+                                <em>Spring 2025 - Present</em>
+                                <ul style="padding-left:18px">
+                                  <li>Lead the executive board in organizing lectures, panel discussions, and community service events to foster cultural understanding and student support.</li>
+                                  <li>Act as the primary liaison between the organization and university administration.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Vice President</span>, <a href="https://www.facebook.com/louisianatechBD" target="_blank">Students' Association of Bangladesh at Louisiana Tech University</a>
+                                <br>
+                                <em>Spring 2025 - Present</em>
+                                <ul style="padding-left:18px">
+                                  <li>Coordinate cultural events and support initiatives for the Bangladeshi student community, ensuring effective representation within the university.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">Debate Team Member</span>, Institute of Business Administration, University of Dhaka (DU-IBA) Debate Team
+                                <br>
+                                <em>2019</em>
+                                <ul style="padding-left:18px">
+                                  <li>Member of the team that won the WUB National Debate Competition 2019, World University Bangladesh.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:20px;width:100%;vertical-align:middle">
+                                <span class="papertitle">President</span>, <a href="https://www.facebook.com/KUETDebatingSociety" target="_blank">KUET Debating Society</a>
+                                <br>
+                                <em>July 2016 - June 2017</em>
+                                <ul style="padding-left:18px">
+                                  <li>Elected to lead the university debating society for a one-year term.</li>
+                                  <li>Organized the 'KDS-Transparency International Bangladesh Inter-University National Debate Festival 2017'.</li>
+                                  <li>Captained the team to win the university's first national-level award (Runner-up, UGC National British Parliamentary Debate Competition 2016).</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
 
                           
                       <!-- Education -->
@@ -517,8 +961,8 @@
       function update_isotope() {
         // Retrieve cached button click.
         var defaultFilterValue = localStorage.getItem('filterValue');
-        if (defaultFilterValue == null) {
-          defaultFilterValue = ".research"
+        if (defaultFilterValue == null || !document.querySelector('.button[data-filter="' + defaultFilterValue + '"]')) {
+          defaultFilterValue = ".publication"
         }
         $grid.isotope({ filter: defaultFilterValue });
         var buttons = document.getElementsByClassName("button");
