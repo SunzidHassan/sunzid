@@ -129,7 +129,50 @@
                                   A multi-modal, multi-robot source localization framework that fuses <b>visual</b>, <b>olfactory</b>, and <b>auditory</b> sensing into probabilistic belief maps over a SLAM-derived occupancy grid, using log-space Bayesian evidence accumulation and entropy-based termination.
                                 </p>
                                 <p>
-                                  The framework runs on a custom robot platform that integrates a camera, a microphone array, and a gas sensor on an embedded computer, with a ROS2 software stack for real-time multi-modal sensing, mapping, and navigation. Algorithms are developed and validated in the AI2-THOR and Gazebo simulators.
+                                  The framework runs on a custom robot platform that integrates a camera, a microphone array, and a gas sensor on an embedded computer, with a ROS2 software stack for real-time multi-modal sensing, mapping, and navigation. Algorithms are developed and validated in the AI2-THOR and Gazebo simulators, and in a real household environment. A paper based on this work is under review at IEEE ICRA 2027.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <!--Personal Assistant Robot-->
+                            <tr>
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <img src='images/robotPlatform26.png' width=160>
+                                </div>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <span class="papertitle">Personal Assistant Robot</span>
+                                <br>
+                                <br>
+                                <em>Current</em>
+                                <br>
+                                <em><a href="https://youtu.be/ggUFHPtVB1k" target="_blank">Demo Video</a></em>
+                                <p></p>
+                                <p>
+                                  A personal AI assistant running on my custom-built ROS 2 differential-drive robot, which carries an OAK-D S2 stereo camera, an RPLIDAR A1, an MQ-3 chemical sensor, a ReSpeaker XVF3800 microphone array, and an NVIDIA Jetson Orin Nano. It can recognize people and remember their interests, hold conversations, carry out requests such as setting reminders and taking photos, and navigate autonomously.
+                                </p>
+                                <p>
+                                  The project is a finalist at the Nexus Louisiana Technology Competition 2026.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <!--Quadcopter-->
+                            <tr>
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <img src='images/quadcopter26.jpg' width=160>
+                                </div>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <span class="papertitle">Custom-Built Quadcopter</span>
+                                <br>
+                                <br>
+                                <em>Current</em>
+                                <p></p>
+                                <p>
+                                  A quadcopter I built from scratch around a Pixhawk 6C flight controller, as a first step toward aerial multi-modal sensing. I plan to extend the VOA source localization algorithm to this platform.
                                 </p>
                               </td>
                             </tr>
@@ -272,6 +315,27 @@
                         <!-- AI-based OSL Paper Presentation -->
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                           <tbody>
+
+                            <!--VOA (under review)-->
+                            <tr>
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <img src='images/voa26.png' width=160>
+                                </div>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                <span class="papertitle">VOA: A Framework for Odor and Sound Source Localization via Visual, Olfactory, and Auditory Fusion</span>
+                                <br>
+                                <strong>Sunzid Hassan</strong>
+                                <br>
+                                <em>Under review, IEEE International Conference on Robotics and Automation (ICRA)</em>, 2027
+                                <br>
+                                <p></p>
+                                <p>
+                                  Proposed a framework that localizes both odor and sound sources by fusing vision, olfaction, and audition. Each sense produces a source probability distribution over the search area, and the three are combined by log-space Bayesian evidence accumulation to guide the robot. Validated in a simulated household and in a real household, running entirely onboard a battery-powered NVIDIA Jetson Orin Nano.
+                                </p>
+                              </td>
+                            </tr>
 
                             <!--Semantic OSL-->
                             <tr>
